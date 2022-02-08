@@ -1,10 +1,27 @@
+// base styles
+
 * {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
 //navigation styles
 
-.navbar {
+.navbar,
+footer {
   background-color: $primary-color;
 }
 
@@ -16,8 +33,12 @@
 
 .nav-link {
   font-size: 1.7rem;
-  margin: 0px 10px;
+  margin: 10px 10px;
   color: $background-color;
+}
+
+.navbar-nav {
+  margin-right: 50px;
 }
 
 .nav-link:hover {
@@ -40,4 +61,17 @@
   justify-content: end;
 }
 
-// main styles
+// footer styles
+
+footer {
+  flex-shrink: 0;
+}
+
+.fab {
+  color: $background-color;
+  font-size: 2.5rem;
+}
+
+.socials {
+  margin-right: 50px;
+}
