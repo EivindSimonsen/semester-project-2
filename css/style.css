@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #f24150;
+}
+
+.navbar-brand img {
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  margin: 0px 10px;
+  color: #f2f1f0;
+}
+
+.nav-link:hover {
+  color: #1a3540;
+}
+
+.navbar-toggler {
+  background-color: #f2f1f0;
+  border: 2px solid #1a3540;
+}
+
+.navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1a3540;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+/*# sourceMappingURL=style.css.map */
