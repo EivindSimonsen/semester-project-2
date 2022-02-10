@@ -22,7 +22,9 @@ h1 {
   font-family: $primary-header, Roboto, "Open Sans", sans-serif;
 }
 
-a {
+a,
+input,
+button {
   font-family: $secondary-header, Roboto, "Open Sans", sans-serif;
 }
 

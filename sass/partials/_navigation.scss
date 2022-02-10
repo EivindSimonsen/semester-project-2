@@ -1,40 +1,43 @@
 .navbar,
 footer {
   background-color: $primary-color;
+  @include box-shadow;
 }
 
-.navbar-brand img {
-  height: 50%;
-  width: 50%;
-  margin: 10px;
+.navbar {
+  &-brand img {
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+  }
+
+  &-nav {
+    margin-right: 50px;
+  }
+
+  &-collapse {
+    justify-content: end;
+  }
 }
 
 .nav-link {
   font-size: 1.7rem;
   margin: 10px 10px;
   color: $background-color;
-}
 
-.navbar-nav {
-  margin-right: 50px;
-}
-
-.nav-link:hover {
-  color: $secondary-color;
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 .navbar-toggler {
   background-color: $background-color;
   border: 2px solid $secondary-color;
-}
 
-.navbar-toggler-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $secondary-color;
-}
-
-.navbar-collapse {
-  justify-content: end;
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-color;
+  }
 }

@@ -8,4 +8,17 @@
     border-radius: 10px !important;
     margin: 0px !important;
   }
-} ;
+}
+
+@media (min-width: 992px) {
+  .intro__header {
+    & h1,
+    .intro__header--product-line {
+      display: block;
+    }
+  }
+
+  .intro__header-mobile > * {
+    display: none;
+  }
+}

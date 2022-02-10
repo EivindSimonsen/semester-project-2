@@ -1,4 +1,4 @@
-//Colors
+//colors
 $primary-color: #f24150;
 $secondary-color: #1a3540;
 $background-color: #f2f1f0;
@@ -8,3 +8,9 @@ $background-color: #f2f1f0;
 $primary-header: "Obviously";
 $secondary-header: "Source Sans Pro";
 $paragraph: "Roboto";
+
+// mixins
+
+@mixin box-shadow {
+  box-shadow: -3px 4px 8px 1px rgba(26, 53, 64, 0.49);
+}

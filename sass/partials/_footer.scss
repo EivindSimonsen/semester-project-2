@@ -1,5 +1,6 @@
 footer {
   flex-shrink: 0;
+  flex-direction: column;
 }
 
 .fab {
@@ -13,30 +14,32 @@ footer {
 
 .newsletter {
   white-space: nowrap;
-}
 
-.newsletter input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid $secondary-color;
-  margin-top: 20px;
-}
+  & input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $secondary-color;
+    margin-top: 20px;
+  }
 
-.newsletter button {
-  padding: 8px;
-  border-radius: 10px;
-  border: none;
-  background-color: $secondary-color;
-  color: $background-color;
-  margin-left: 6px;
-}
+  & input:focus {
+    outline-width: 0;
+    outline: none;
+    border: 1px solid $secondary-color;
+  }
 
-.newsletter button:hover {
-  background-color: $background-color;
-  color: $secondary-color;
-  border: 1px solid $secondary-color;
-}
+  & button {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: $secondary-color;
+    color: $background-color;
+    margin-left: 6px;
+  }
 
-footer {
-  flex-direction: column;
+  & button:hover {
+    background-color: $background-color;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
 }
