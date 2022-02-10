@@ -1,0 +1,11 @@
+.product-introduction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.product-background {
+  background-color: $background-color;
+  padding: 30px 0px;
+}

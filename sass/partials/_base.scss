@@ -12,6 +12,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: $paragraph, "Open Sans", sans-serif;
 }
 
 .wrapper {
@@ -20,14 +21,46 @@ body {
 
 h1 {
   font-family: $primary-header, Roboto, "Open Sans", sans-serif;
+  color: $primary-color;
 }
 
 a,
 input,
-button {
+button,
+h2,
+h3 {
   font-family: $secondary-header, Roboto, "Open Sans", sans-serif;
 }
 
-p {
-  font-family: $paragraph, "Open Sans", sans-serif;
+h2,
+h3 {
+  color: $secondary-color;
+}
+
+.section__name {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 60px 0px 30px 0px;
+}
+
+.cta {
+  width: 100px;
+  background-color: $primary-color;
+  color: $background-color;
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  @include cta-shadow;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $background-color;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+}
+
+#active {
+  color: $secondary-color;
 }

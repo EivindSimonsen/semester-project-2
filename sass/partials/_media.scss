@@ -1,3 +1,9 @@
+@media (min-width: 791px) {
+  .featured {
+    grid-template-columns: repeat(2, auto) !important;
+  }
+}
+
 @media (min-width: 858px) {
   .py-3 {
     flex-direction: row;
@@ -20,5 +26,11 @@
 
   .intro__header-mobile > * {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featured {
+    grid-template-columns: repeat(3, auto) !important;
   }
 }
