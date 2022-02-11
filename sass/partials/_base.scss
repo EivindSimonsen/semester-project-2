@@ -15,6 +15,11 @@ body {
   font-family: $paragraph, "Open Sans", sans-serif;
 }
 
+p {
+  line-height: 2;
+  color: $secondary-color;
+}
+
 .wrapper {
   flex: 1 0 auto;
 }
@@ -30,6 +35,7 @@ button,
 h2,
 h3 {
   font-family: $secondary-header, Roboto, "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 h2,
@@ -50,9 +56,9 @@ h3 {
   border: 1px solid $secondary-color;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px;
+  margin: 20px 0px;
   @include cta-shadow;
-  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: $background-color;
@@ -63,4 +69,31 @@ h3 {
 
 #active {
   color: $secondary-color;
+
+  &__breadcrumb {
+    color: $primary-color;
+  }
+}
+
+.breadcrumb {
+  justify-content: center;
+
+  &-item a {
+    color: $secondary-color;
+  }
+}
+
+.center-heading {
+  text-align: center;
+  margin: 20px 0px 80px 0px;
+}
+
+hr {
+  border: 1px solid $secondary-color;
+}
+
+.product-background {
+  background-color: $background-color;
+  padding: 30px 0px 60px 0px;
+  @include box-shadow;
 }

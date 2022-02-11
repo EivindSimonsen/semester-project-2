@@ -12,9 +12,22 @@ $paragraph: "Roboto";
 // mixins
 
 @mixin box-shadow {
-  box-shadow: -3px 4px 8px 1px rgba(26, 53, 64, 0.49);
+  box-shadow: -2px 2px 8px 1px rgba(26, 53, 64, 0.49);
 }
 
 @mixin cta-shadow {
   box-shadow: 0px 2px 4px 1px rgba(26, 53, 64, 0.49);
+}
+
+// Reusable classes
+
+.img-styles {
+  width: 365px;
+  height: 300px;
+  border: 3px solid $primary-color;
+  @include box-shadow;
+
+  @media (min-width: 1400px) {
+    width: 420px;
+  }
 }

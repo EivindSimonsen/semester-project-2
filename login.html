@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Running Man | Home</title>
+    <title>Running Man | Login</title>
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.typekit.net/nlm7cjn.css" />
@@ -23,55 +23,19 @@
               <div class="navbar-nav">
                 <a class="nav-link" href="product.html">Products</a>
                 <a class="nav-link" href="cart.html">Cart</a>
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" id="active" href="login.html">Login</a>
               </div>
             </div>
           </div>
         </nav>
       </header>
-      <main class="container">
+      <main class="container product-background">
+        <h1 class="center-heading">Login</h1>
         <section>
-          <div class="intro header-image">
-            <div class="intro__header">
-              <h1 class="intro__header--brand">Running Man</h1>
-              <div class="intro__header--product-line">
-                <p>Sport shoes</p>
-              </div>
-            </div>
-          </div>
-          <div class="intro__header-mobile">
-            <h1 class="intro__header-mobile--brand">Running Man</h1>
-            <div class="intro__header-mobile--product-line">
-              <p>Sport shoes</p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div>
-            <h2 class="section__name">Featured</h2>
-          </div>
-          <div class="featured">
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/giorgio-trovato-RrNKFfM9jJI-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
-              </div>
-            </div>
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/omar-prestwich-jLEGurepDco-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
-              </div>
-            </div>
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/trendest-studio-XZ3EmAIWuz0-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
-              </div>
-            </div>
+          <div class="newsletter login">
+            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Password" />
+            <a href="login-success.html"><button class="cta">Login</button></a>
           </div>
         </section>
       </main>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Running Man | Home</title>
+    <title>Running Man | Product name</title>
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.typekit.net/nlm7cjn.css" />
@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="product.html">Products</a>
+                <a class="nav-link" id="active" href="product.html">Products</a>
                 <a class="nav-link" href="cart.html">Cart</a>
                 <a class="nav-link" href="login.html">Login</a>
               </div>
@@ -29,47 +29,24 @@
           </div>
         </nav>
       </header>
-      <main class="container">
-        <section>
-          <div class="intro header-image">
-            <div class="intro__header">
-              <h1 class="intro__header--brand">Running Man</h1>
-              <div class="intro__header--product-line">
-                <p>Sport shoes</p>
-              </div>
-            </div>
-          </div>
-          <div class="intro__header-mobile">
-            <h1 class="intro__header-mobile--brand">Running Man</h1>
-            <div class="intro__header-mobile--product-line">
-              <p>Sport shoes</p>
-            </div>
-          </div>
-        </section>
-        <section>
+      <main class="container product-background">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="product.html">Products</a></li>
+            <li class="breadcrumb-item" id="active__breadcrumb" aria-current="page">Product name</li>
+          </ol>
+        </nav>
+        <section class="products-specific">
           <div>
-            <h2 class="section__name">Featured</h2>
+            <h1>Nike air dryer</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, recusandae. Fugit facilis obcaecati eveniet tempora doloremque veniam minus molestiae recusandae, reprehenderit velit, eum quod aut ratione numquam tenetur aperiam placeat.</p>
           </div>
-          <div class="featured">
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/giorgio-trovato-RrNKFfM9jJI-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
-              </div>
-            </div>
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/omar-prestwich-jLEGurepDco-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
-              </div>
-            </div>
-            <div class="featured__product">
-              <h3>Nike air bender</h3>
-              <div class="featured__product--card">
-                <img src="img/trendest-studio-XZ3EmAIWuz0-unsplash.jpg" alt="" />
-                <a href="#" class="cta">Read more</a>
+          <div>
+            <div class="products__container--content">
+              <img src="img/giorgio-trovato-RrNKFfM9jJI-unsplash.jpg" alt="" />
+              <div class="content-flex">
+                <p>24.90$</p>
+                <a href="#" class="cta">Checkout</a>
               </div>
             </div>
           </div>

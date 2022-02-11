@@ -2,6 +2,10 @@ footer {
   flex-shrink: 0;
   flex-direction: column;
   margin-top: 150px;
+
+  @media (min-width: 858px) {
+    flex-direction: row;
+  }
 }
 
 .fab {
@@ -21,6 +25,13 @@ footer {
     border-radius: 5px;
     border: 1px solid $secondary-color;
     margin-top: 20px;
+    @include box-shadow;
+
+    @media (min-width: 858px) {
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0px;
+    }
   }
 
   & input:focus {
@@ -36,6 +47,7 @@ footer {
     background-color: $secondary-color;
     color: $background-color;
     margin-left: 6px;
+    @include box-shadow;
   }
 
   & button:hover {
