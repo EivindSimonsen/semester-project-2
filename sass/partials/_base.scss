@@ -33,7 +33,8 @@ a,
 input,
 button,
 h2,
-h3 {
+h3,
+textarea {
   font-family: $secondary-header, Roboto, "Open Sans", sans-serif;
   text-decoration: none;
 }
@@ -63,7 +64,6 @@ h3 {
   &:hover {
     background-color: $background-color;
     color: $secondary-color;
-    border: 1px solid $secondary-color;
   }
 }
 
@@ -94,6 +94,54 @@ hr {
 
 .product-background {
   background-color: $background-color;
-  padding: 30px 0px 60px 0px;
+  padding: 10px 0px 60px 0px;
   @include box-shadow;
+}
+
+.input-styles {
+  white-space: nowrap;
+
+  & input,
+  textarea,
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $secondary-color;
+    margin-top: 20px;
+    @include box-shadow;
+
+    @media (min-width: 858px) {
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0px;
+    }
+  }
+
+  & input:focus,
+  textarea:focus,
+  select:focus {
+    outline-width: 0;
+    outline: none;
+    border: 1px solid $secondary-color;
+  }
+
+  & button {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: $secondary-color;
+    color: $background-color;
+
+    @include box-shadow;
+  }
+
+  & button:hover {
+    background-color: $background-color;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+}
+
+#newsletter {
+  margin-left: 10px;
+  border: 1px solid $secondary-color;
 }

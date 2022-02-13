@@ -1,14 +1,63 @@
 .login {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0px auto;
 
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+
   & input {
-    margin: 10px;
+    margin: 10px 0px;
   }
 
   & a {
     margin: 20px auto;
+  }
+}
+
+form {
+  margin: 40px;
+}
+
+.content-update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & > * {
+    margin: 10px;
+  }
+}
+
+.form {
+  &-error {
+    /* color: $background-color; */
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &-success {
+    /* color: $background-color; */
+    color: green;
+  }
+}
+
+.danger-zone {
+  text-align: center;
+  margin-bottom: 60px;
+  color: $primary-color;
+}
+
+#delete {
+  background-color: $primary-color;
+  margin-top: 30px;
+
+  &:hover {
+    background-color: darken($color: $primary-color, $amount: 7);
+    color: $background-color;
   }
 }

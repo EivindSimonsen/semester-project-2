@@ -22,12 +22,18 @@ $paragraph: "Roboto";
 // Reusable classes
 
 .img-styles {
-  width: 365px;
-  height: 300px;
+  width: 300px;
+  height: 255px;
   border: 3px solid $primary-color;
   @include box-shadow;
 
+  @media (min-width: 992px) {
+    width: 365px;
+    height: 300px;
+  }
+
   @media (min-width: 1400px) {
     width: 420px;
+    height: 340px;
   }
 }
