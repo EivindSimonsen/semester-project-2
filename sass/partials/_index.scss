@@ -1,14 +1,11 @@
 .header-image {
-  background-image: url(../../img/jakob-owens-JzJSybPFb3s-unsplash.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   min-height: 45vh;
-  /* margin-top: 50px; */
   @include box-shadow;
   position: relative;
   background-position: 40%;
-  /* border: 1px solid $secondary-color; */
 
   @media (min-width: 768px) {
     min-height: 70vh;

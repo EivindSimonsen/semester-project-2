@@ -1,23 +1,29 @@
 .img-styles, .featured__product--card img, .products__container--content img {
   width: 300px;
-  height: 255px;
+  height: 300px;
   border: 3px solid #f24150;
   -webkit-box-shadow: -2px 2px 8px 1px rgba(26, 53, 64, 0.49);
           box-shadow: -2px 2px 8px 1px rgba(26, 53, 64, 0.49);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 858px) {
   .img-styles, .featured__product--card img, .products__container--content img {
-    width: 365px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
   }
 }
 
-@media (min-width: 1400px) {
-  .img-styles, .featured__product--card img, .products__container--content img {
-    width: 420px;
-    height: 340px;
-  }
+.alert-danger {
+  background-color: #f24150;
+  color: #f2f1f0;
+}
+
+.alert-success {
+  background-color: lightgreen;
+}
+
+.alert-warning {
+  background-color: orange;
 }
 
 * {
@@ -183,6 +189,11 @@ hr {
   border: 1px solid #1a3540;
 }
 
+.spinner-border {
+  color: #f24150;
+  margin-bottom: 60px;
+}
+
 .navbar,
 footer {
   background-color: #f24150;
@@ -264,17 +275,14 @@ footer {
 }
 
 .header-image {
-  background-image: url(../../img/jakob-owens-JzJSybPFb3s-unsplash.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   min-height: 45vh;
-  /* margin-top: 50px; */
   -webkit-box-shadow: -2px 2px 8px 1px rgba(26, 53, 64, 0.49);
           box-shadow: -2px 2px 8px 1px rgba(26, 53, 64, 0.49);
   position: relative;
   background-position: 40%;
-  /* border: 1px solid $secondary-color; */
 }
 
 @media (min-width: 768px) {
@@ -494,7 +502,7 @@ footer {
 }
 
 .products-specific * {
-  margin: 5px;
+  margin: 10px;
 }
 
 @media (min-width: 768px) {
@@ -507,7 +515,7 @@ footer {
 }
 
 .products__container--content img {
-  width: 345px;
+  width: 320px;
 }
 
 @media (min-width: 576px) {
