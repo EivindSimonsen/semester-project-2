@@ -1,19 +1,9 @@
 import { baseUrl } from "../settings/api.js";
-import displayMessage from "../components/displayMessage.js";
-
+ 
 // Featured products at home page
-export async function getFeatured() {
-
-    const productsUrl = baseUrl + "/products";
+export function renderFeatured(product) {
 
     const container = document.querySelector(".featured");
-
-    try {
-        const response = await fetch(productsUrl);      
-
-        const json = await response.json();       
-
-        const product = json;
 
         container.innerHTML = "";
 
@@ -35,26 +25,13 @@ export async function getFeatured() {
               </div>
             </div>
             `
-        }
-
-        console.log(product);
-    } catch (error) {
-        displayMessage("alert-danger", error, ".featured");
-    }
-}
+        };
+};
 
 // All products at products page
-export async function getProducts(product) {
-    const productsUrl = baseUrl + "/products";
+export function renderProducts(product) {
 
     const container = document.querySelector(".products");
-
-    try {
-        const response = await fetch(productsUrl);      
-
-        const json = await response.json();       
-
-        const product = json;
 
         container.innerHTML = "";
 
@@ -75,10 +52,5 @@ export async function getProducts(product) {
               </div>
             </div>
             `
-        }
-
-        console.log(product);
-    } catch (error) {
-        displayMessage("alert-danger", error, ".products");
-    }
-}
+        };
+};

@@ -45,6 +45,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Roboto", "Open Sans", sans-serif;
+  background: repeating-linear-gradient(45deg, #f2f1f0 5px, #eaeaee 50px);
+  background-repeat: repeat;
 }
 
 p {

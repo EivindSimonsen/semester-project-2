@@ -13,8 +13,6 @@ export async function getHeroImage() {
         const baseHeroImg = getHeroImg.hero_banner.formats.large.url;
         const heroImg = baseUrl + baseHeroImg;
 
-        console.log(heroImg);
-
         document.querySelector(".header-image").style.cssText+=`background-image:url(${heroImg})`;
 
     } catch (error) {

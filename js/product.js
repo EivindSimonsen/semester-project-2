@@ -1,20 +1,25 @@
-import { getProducts } from "./utils/render-products.js";
+import { baseUrl } from "./settings/api.js";
+import { renderProducts } from "./utils/render-products.js";
+import displayMessage from "./components/displayMessage.js";
+import { searchProduct } from "./utils/filter.js";
 
-function searchThing(product) {
-    const search = document.querySelector(".search");
+async function getProducts() {
+    const productsUrl = baseUrl + "/products";
 
-    search.onkeyup = function (event) {
-        const searchValue = event.target.value.trim().toLowerCase();
-        console.log(searchValue);
+    try {
+        const response = await fetch(productsUrl);      
 
-        const filteredArticles = product.filter(function (product) {
-            if (product.title.toLowerCase().startsWith(searchValue)) {
-                return true;
-            }
-        });
-        getProducts(filteredArticles);
+        const json = await response.json();       
+
+        const product = json;
+
+        renderProducts(product);
+        searchProduct(product);
+
+        console.log(product);
+    } catch (error) {
+        displayMessage("alert-danger", error, ".products");
     }
 }
 
-searchThing();
 getProducts();
