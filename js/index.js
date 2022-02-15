@@ -17,7 +17,7 @@ export async function getFeatured() {
         renderFeatured(product);
         console.log(product);
     } catch (error) {
-        displayMessage("alert-danger", error, ".featured");
+        displayMessage("alert-danger", "Products failed to load from server, come back later", ".featured");
     }
 }
 
