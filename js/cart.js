@@ -40,5 +40,19 @@ products.forEach(function(product) {
             </div>
         <button class="cta cart-total--cta">Checkout</button>
         `;
+        
 });
+
+/*FYI --- The only trash can that works is the first one! The others don't respond to the event*/
+// removes the cart items from local storage, and refreshes the page
+const trashCan = document.querySelector(".trash-can");
+    trashCan.addEventListener("click", baba);
+
+    function baba() {
+        localStorage.removeItem("products");
+        document.location.reload();
+    }
+// i could only manage to clear the whole array, and not single items
+
+
 
