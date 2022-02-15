@@ -57,8 +57,11 @@ const trashCan = document.querySelector(".trash-can");
     trashCan.addEventListener("click", removeFromCart);
 
     function removeFromCart() {
-        localStorage.removeItem("products");
-        document.location.reload();
+        if(confirm("Will remove all items in cart")) {
+            localStorage.removeItem("products");
+            cartContainer.innerHTML = `<h2 class="section__name">You have no items in cart</h2>`;
+            cartTotal.innerHTML = "";
+        }
     }
 // i could only manage to clear the whole array, and not single items
 
