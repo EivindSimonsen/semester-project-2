@@ -12,31 +12,16 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Running mans logo, pictured by a sneaker" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" href="product.html">Products</a>
-                <a class="nav-link" href="cart.html">Cart</a>
-                <a class="nav-link" id="active" href="login.html">Login</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <header></header>
       <main class="container product-background">
         <h1 class="center-heading">Login</h1>
         <section>
-          <div class="input-styles login">
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <a href="login-success.html"><button class="cta">Login</button></a>
-          </div>
+          <form class="input-styles login">
+            <input type="text" placeholder="Username" id="username" />
+            <input type="password" placeholder="Password" id="password" />
+            <button class="cta cta--center">Login</button>
+            <div class="error-user"></div>
+          </form>
         </section>
       </main>
     </div>
@@ -68,6 +53,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/login.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

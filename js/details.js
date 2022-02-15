@@ -1,6 +1,10 @@
 import { baseUrl } from "./settings/api.js";
 import { getExistingProducts } from "./utils/getProducts.js";
 import displayMessage from "./components/displayMessage.js";
+import createMenu from "./components/createMenu.js";
+
+createMenu();
+
 
 // locating the querystring in the url
 const queryString = document.location.search;
@@ -27,6 +31,7 @@ async function productSpecific() {
     try {
       
         const detailsContainer = document.querySelector(".products-specific");
+        const breadcrumb = document.querySelector("#active__breadcrumb");
 
         const response = await fetch(productUrl);
 
@@ -50,6 +55,7 @@ async function productSpecific() {
           return parseInt(products.id) === product.id;
         });
 
+        // classes added if the object exists in the array
         if (doesObjectExist) {
           cssClass = "cta-added";
           ctaText = "In cart";
@@ -73,6 +79,8 @@ async function productSpecific() {
           </div>
         `
 
+        breadcrumb.innerHTML = `${product.title}`;
+
     } catch (error) {
         displayMessage("alert-danger", "Products failed to load from server, come back later", ".products-specific");
     }
@@ -83,29 +91,32 @@ async function productSpecific() {
     buttonCart.addEventListener("click", handleClick);
 
     function handleClick() {
+      // the data attributes in the content above assigned a variable
       const id = this.dataset.id;
       const title = this.dataset.title;
       const img = this.dataset.img;
       const price = this.dataset.price;
-
-      console.log(id);
-      console.log(title);
-      console.log(img);
-      console.log(price);
-
+  
+      // getting the current products in the array
       const currentProducts = getExistingProducts();
-
+  
+      // if product exists in the array, do nothing
       const productExists = currentProducts.find(function(product) {
         return product.id === id;
       });
-
+  
+      // if it doesn't exists, add it
       if (!productExists) {
         const finalProduct = { id: id, title: title, img: img, price: price };
-
+  
+        // this pushes the product into the array
         currentProducts.push(finalProduct);
-
+  
+        // saves the array after push
         saveProduct(currentProducts);
-      } else {
+      } 
+      
+      else {
         const newProducts = currentProducts.filter(product => product.id !== id);
         saveProduct(newProducts);
       }
@@ -114,7 +125,8 @@ async function productSpecific() {
       buttonCart.style.backgroundColor = "lightgreen";
       buttonCart.style.color = "black";
     }
-
+  
+    // transfers the product to a string, and puts it in local storage
     function saveProduct(product) {
       localStorage.setItem("products", JSON.stringify(product));
     }

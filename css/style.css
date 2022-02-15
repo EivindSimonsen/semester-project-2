@@ -31,6 +31,10 @@
   color: #1a3540;
 }
 
+.cta--center {
+  margin: 10px auto;
+}
+
 .cta-added {
   background-color: lightgreen;
   color: black;
@@ -706,5 +710,11 @@ form {
 #delete:hover {
   background-color: #f02031;
   color: #f2f1f0;
+}
+
+.error-user {
+  text-align: center;
+  padding: 20px 100px;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */

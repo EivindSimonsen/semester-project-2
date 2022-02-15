@@ -2,6 +2,9 @@ import { baseUrl } from "./settings/api.js";
 import { renderProducts } from "./utils/render-products.js";
 import displayMessage from "./components/displayMessage.js";
 import { searchProduct } from "./utils/filter.js";
+import createMenu from "./components/createMenu.js";
+
+createMenu();
 
 async function getProducts() {
     const productsUrl = baseUrl + "/products";

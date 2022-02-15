@@ -48,6 +48,10 @@ $paragraph: "Roboto";
     background-color: $background-color;
     color: $secondary-color;
   }
+
+  &--center {
+    margin: 10px auto;
+  }
 }
 
 .cta-added {

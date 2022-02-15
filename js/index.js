@@ -2,6 +2,9 @@ import { baseUrl } from "./settings/api.js";
 import { renderFeatured } from "./utils/render-products.js";
 import { getHeroImage } from "./utils/hero-image.js";
 import displayMessage from "./components/displayMessage.js";
+import createMenu from "./components/createMenu.js";
+
+createMenu();
 
 export async function getFeatured() {
 
