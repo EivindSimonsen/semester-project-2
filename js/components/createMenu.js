@@ -9,7 +9,9 @@ export default function createMenu() {
     let authLink = `<a class="nav-link" id="${pathname === "/login.html" ? "active" : ""}" href="login.html">Login</a>`;
 
     if (username) {
-        authLink = `<a class="nav-link" id="${pathname === "/login-success.html" ? "active" : ""}" href="login-success.html">${username}</a>`;
+        authLink = 
+        `
+        <a class="nav-link" id="${pathname === "/login-success.html" ? "active" : ""}" href="login-success.html">${username}</a>`;
     }
 
     const navContainer = document.querySelector("header");
@@ -33,4 +35,7 @@ export default function createMenu() {
         </nav>
     `
 }
+
+
+
 
