@@ -22,6 +22,7 @@ async function getProducts() {
         console.log(product);
     } catch (error) {
         displayMessage("alert-danger", "Products failed to load from server, come back later", ".products");
+        console.log(error);
     }
 }
 

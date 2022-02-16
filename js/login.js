@@ -3,6 +3,9 @@ import displayMessage from "./components/displayMessage.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import createMenu from "./components/createMenu.js";
 
+localStorage.removeItem("token");
+localStorage.removeItem("user");
+
 createMenu();
 
 const login = document.querySelector("form");

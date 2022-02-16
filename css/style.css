@@ -686,15 +686,15 @@ form {
 }
 
 .form-error {
-  /* color: $background-color; */
-  color: red;
+  color: #f2f1f0;
+  /* color: red; */
   margin-bottom: 15px;
   text-align: center;
 }
 
 .form-success {
-  /* color: $background-color; */
-  color: green;
+  color: #f2f1f0;
+  /* color: green; */
 }
 
 .danger-zone {
@@ -717,5 +717,9 @@ form {
   text-align: center;
   padding: 20px 100px;
   font-size: 1.3rem;
+}
+
+#featured {
+  margin: 10px 0px 30px 0px;
 }
 /*# sourceMappingURL=style.css.map */

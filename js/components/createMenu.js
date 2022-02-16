@@ -9,10 +9,13 @@ export default function createMenu() {
     let authLink = `<a class="nav-link" id="${pathname === "/login.html" ? "active" : ""}" href="login.html">Login</a>`;
 
     if (username) {
-        authLink = 
-        `
-        <a class="nav-link" id="${pathname === "/login-success.html" ? "active" : ""}" href="login-success.html">${username}</a>`;
+        authLink = `<a class="nav-link" id="${pathname === "/login-success.html" ? "active" : ""}" href="login-success.html">${username}</a>
+        <a class="nav-link log-out" id="${pathname === "/login.html" ? "active" : ""}" href="login.html">Logout</a>`;
     }
+
+    if (!username) {
+      authLink;
+  }
 
     const navContainer = document.querySelector("header");
 
@@ -33,8 +36,8 @@ export default function createMenu() {
             </div>
           </div>
         </nav>
-    `
-}
+        `
+};
 
 
 
