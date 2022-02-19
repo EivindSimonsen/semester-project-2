@@ -654,11 +654,7 @@ footer {
 }
 
 .login input {
-  margin: 10px 0px;
-}
-
-.login a {
-  margin: 20px auto;
+  margin-bottom: 20px;
 }
 
 form {
@@ -682,13 +678,7 @@ form {
 }
 
 .content-update > * {
-  margin: 10px;
-}
-
-.form-error {
-  color: #f2f1f0;
-  margin-bottom: 15px;
-  text-align: center;
+  margin: 30px;
 }
 
 .danger-zone {
@@ -717,12 +707,6 @@ form {
 #delete:hover {
   background-color: #f02031;
   color: #f2f1f0;
-}
-
-.error-user {
-  text-align: center;
-  padding: 20px 100px;
-  font-size: 1.3rem;
 }
 
 #featured {

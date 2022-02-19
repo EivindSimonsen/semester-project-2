@@ -18,14 +18,18 @@
         <form class="add-product">
           <div class="input-styles login">
             <h2>Add a product</h2>
+            <label for="productName">Title</label>
             <input type="text" placeholder="Product name *" id="productName" />
+            <label for="price">Price</label>
             <input type="text" placeholder="Price *" id="price" />
+            <label for="image">Upload image</label>
             <input type="file" accept="image/*" placeholder="Upload image *" id="image" />
             <label for="featured">Featured</label>
             <select name="featured" id="featured">
               <option value="True">True</option>
               <option value="False">False</option>
             </select>
+            <label for="description">Description</label>
             <textarea placeholder="Description" id="description" cols="30" rows="10"></textarea>
             <div class="content-update">
               <button class="cta">Add</button>
