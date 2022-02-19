@@ -38,21 +38,22 @@ form {
     margin-bottom: 15px;
     text-align: center;
   }
-
-  &-success {
-    color: $background-color;
-  }
 }
 
 .danger-zone {
-  text-align: center;
-  margin-bottom: 60px;
   color: $primary-color;
+  font-size: 3.5rem;
+}
+
+.delete-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #delete {
   background-color: $primary-color;
-  margin-top: 30px;
+  font-size: 1rem;
 
   &:hover {
     background-color: darken($color: $primary-color, $amount: 7);
@@ -68,4 +69,36 @@ form {
 
 #featured {
   margin: 10px 0px 30px 0px;
+}
+
+.update-product {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+    & img {
+      width: 200px;
+      height: 200px;
+      border: 2px solid $primary-color;
+    }
+
+    & a {
+      font-size: 1.2rem;
+      width: 100px;
+      padding: 10px 30px;
+    }
+  }
 }
